@@ -31,6 +31,9 @@ public class Login {
                     ((JFrame) SwingUtilities.getWindowAncestor(mainPanel)).dispose();
                 } else {
                     JOptionPane.showMessageDialog(frame, "Credenciales incorrectas", "Error de login", JOptionPane.ERROR_MESSAGE);
+                    userTF.setText("");
+                    passwordTF.setText("");
+
                 }
             }
         });
